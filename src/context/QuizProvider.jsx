@@ -11,6 +11,7 @@ export const QuizProvider = ({children}) =>{
     useEffect(() =>{
         const obtenerPromedioActualizacion = async()=>{
             try{
+                /*
                 const token = localStorage.getItem("token")
                 if(!token) return
 
@@ -20,8 +21,9 @@ export const QuizProvider = ({children}) =>{
                         Authorization:   `Bearer ${token}`    
                     }
                 }
+                */
 
-                const {data} = await clienteAxios("/encuestas",config)
+                const {data} = await clienteAxios("/encuestas")
                 setQuiz(data)
 
             }catch(error){
