@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body .fondo {
+    height: 100%;
+    background-repeat: no-repeat;
+    background: url(assets/fondo01.png) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+       }
+
+       /* Rotación */			
+.rotate{
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+
+    overflow:hidden;
+
+}  
+ 
+
+/* Transformación al pasar el ratón por encima */ 
+.rotate:hover  
+{
+
+    transform: scale(1, 1) rotate(10deg);
+    -ms-transform: scale(1, 1) rotate(10deg);
+    -webkit-transform:scale(1, 1) rotate(10deg);
+    -o-transform: scale(1, 1) rotate(10deg);
+
+}
